@@ -205,7 +205,20 @@ def convert_quiver_repo_to_rst(quiver_path, output_path, timezone_name):
     with open(os.path.join(output_path, 'conf.py'), 'w') as out:
         out.write(
             textwrap.dedent("""\
+                import alabaster
+
                 master_doc = 'index'
+
+                html_theme_path = [alabaster.get_path()]
+                extensions = ['alabaster']
+                html_theme = 'alabaster'
+                html_sidebars = {
+                    '**': [
+                        'navigation.html',
+                        'relations.html',
+                        'searchbox.html',
+                    ]
+                }
             """)
         )
 
