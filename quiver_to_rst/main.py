@@ -197,7 +197,7 @@ def convert_quiver_repo_to_rst(quiver_path, output_path, timezone_name):
                 .. toctree::
                    :glob:
 
-                   **/index.rst
+                   **/index
 
             """)
         )

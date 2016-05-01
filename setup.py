@@ -27,7 +27,7 @@ except ImportError:
 
 setup(
     name='quiver-to-rst',
-    version='0.1',
+    version='0.1.1',
     url='https://github.com/coddingtonbear/quiver-to-rst',
     description=(
         'Convert your Quiver notes into RestructuredText'
